@@ -128,31 +128,31 @@ The script takes one or more URLs (or IPs) as command-line arguments.
 This will test connectivity to an internal VM or load balancer.
 
 ```bash
-python3 query_remote.py [http://10.150.0.2:8080](http://10.150.0.2:8080)
+python3 query_remote.py http://10.150.0.2:8080
 ```
 
 ### Example 2: Test a private DNS name
 This will test both private DNS resolution and connectivity.
 
 ```bash
-python3 query_remote.py [http://internal-app.your.private.domain:8080](http://internal-app.your.private.domain:8080)
+python3 query_remote.py http://internal-app.your.private.domain:8080
 ```
 
 ### Example 3: Test a public URL
 This will test the agent's egress connectivity.
 
 ```bash
-python3 query_remote.py [https://cloud.google.com](https://cloud.google.com)
+python3 query_remote.py https://cloud.google.com
 ```
 
 ### Example 4: Run multiple tests
 ```bash
-python3 query_remote.py [http://10.150.0.2:8080](http://10.150.0.2:8080) [http://internal-app.your.private.domain](http://internal-app.your.private.domain)
+python3 query_remote.py http://10.150.0.2:8080 http://internal-app.your.private.domain
 ```
 
 ### Example 5: Debug Mode
 To see the full raw event stream from the agent, use the `--debug` flag.
 
 ```bash
-python3 query_remote.py --debug [http://10.150.0.2:8080](http://10.150.0.2:8080)
+python3 query_remote.py --debug http://10.150.0.2:8080
 ```
