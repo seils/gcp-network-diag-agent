@@ -66,7 +66,6 @@ async def run_local_test(app_instance):
         print(f"Local Session created: {session.id}")
 
         events = []
-        # FIX: Updated query to match the agent's new instruction
         query_message = "https://httpbin.org/get"
         print(f"\nQuery: {query_message}")
         
